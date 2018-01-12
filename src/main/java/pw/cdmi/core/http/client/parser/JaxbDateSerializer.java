@@ -23,17 +23,17 @@ import java.util.Date;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-import pw.cdmi.utils.DateUtil;
+import pw.cdmi.utils.DateUtils;
 
 public class JaxbDateSerializer extends XmlAdapter<String, Date> {
 
     @Override
     public String marshal(Date date) throws Exception {
-        return DateUtil.formatRfc822Date(date);
+        return DateUtils.formatRfc822Date(date);
     }
 
     @Override
     public Date unmarshal(String date) throws Exception {
-        return DateUtil.parseRfc822Date(date);
+        return DateUtils.parseRfc822Date(date);
     }
 }

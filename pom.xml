@@ -5,7 +5,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pw.cdmi.core</groupId>
 	<artifactId>cdmi-core-http</artifactId>
-	<version>3.0.1-SNAPSHOT</version>
 	<name>core Maven JarLib</name>
 	<url>http://maven.apache.org</url>
 
@@ -20,29 +19,11 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
-		<!-- Hibernate OGM Infinispan module; pulls in the OGM core module -->
 		<dependency>
-			<groupId>org.hibernate.ogm</groupId>
-			<artifactId>hibernate-ogm-mongodb</artifactId>
+			<groupId>pw.cdmi.core</groupId>
+			<artifactId>cdmi-core</artifactId>
+			<version>3.0.1-SNAPSHOT</version>
 		</dependency>
-		<!-- standard APIs dependencies - provided in a Java EE container -->
-		<dependency>
-			<groupId>org.hibernate.javax.persistence</groupId>
-			<artifactId>hibernate-jpa-2.1-api</artifactId>
-		</dependency>
-
-		<!-- mysql -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-
-		<!-- c3p0 -->
-		<dependency>
-			<groupId>c3p0</groupId>
-			<artifactId>c3p0</artifactId>
-		</dependency>
-
 		<!-- servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -249,53 +230,7 @@
 			<groupId>org.jdom</groupId>
 			<artifactId>jdom</artifactId>
 		</dependency>
-		<!-- expect4j -->
-		<dependency>
-			<groupId>com.github.cverges.expect4j</groupId>
-			<artifactId>expect4j</artifactId>
-		</dependency>
 
-		<!-- mail -->
-		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-javamail_1.4_spec</artifactId>
-		</dependency>
-
-		<!-- logback -->
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.logback-extensions</groupId>
-			<artifactId>logback-ext-spring</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.woodstox</groupId>
-			<artifactId>woodstox-core-asl</artifactId>
-		</dependency>
-
-		<!-- lombok -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
-
-		<!-- snmp协议 -->
-		<dependency>
-			<groupId>org.snmp4j</groupId>
-			<artifactId>snmp4j</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>log4j</groupId>
-					<artifactId>log4j</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 
 		<!-- junit -->
 		<dependency>
@@ -312,12 +247,6 @@
 		<dependency>
 			<groupId>jmagick</groupId>
 			<artifactId>jmagick</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>pw.cdmi.core</groupId>
-			<artifactId>cdmi-core</artifactId>
-			<version>3.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
