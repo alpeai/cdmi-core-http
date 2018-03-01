@@ -25,6 +25,7 @@ public enum SystemReason implements ErrorReason {
     InvalidRequest(HttpStatus.INTERNAL_SERVER_ERROR,1008, "无效的请求."),
     MissingAnnotationParameter(HttpStatus.INTERNAL_SERVER_ERROR,1009,"代码中注解的参数缺少"),
     ConfigurationError(HttpStatus.INTERNAL_SERVER_ERROR,1010,"配置错误"),
+    UnImplemented(HttpStatus.NOT_IMPLEMENTED,1016, "服務端尚未實現用戶請求所涉及的功能."),
     ClassCastError(HttpStatus.INTERNAL_SERVER_ERROR,1011,"类型转换错误");
 
     private final int code;
