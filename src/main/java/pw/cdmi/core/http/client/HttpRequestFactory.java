@@ -29,9 +29,9 @@ import org.apache.http.client.methods.HttpOptions;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.client.methods.HttpRequestBase;
+import org.springframework.http.HttpMethod;
 
 import pw.cdmi.core.http.Headers;
-import pw.cdmi.core.http.HttpMethod;
 import pw.cdmi.core.io.ChunkedInputStreamEntity;
 import pw.cdmi.core.io.RepeatableInputStreamEntity;
 

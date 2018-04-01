@@ -5,8 +5,8 @@ import org.springframework.http.HttpStatus;
 import net.sf.json.JSONObject;
 import pw.cdmi.core.http.Headers;
 import pw.cdmi.core.http.rs.RequestContext;
-import pw.cdmi.exception.ErrorMessage;
-import pw.cdmi.exception.ErrorReason;
+import pw.cdmi.error.ErrorMessage;
+import pw.cdmi.error.ErrorReason;
 
 public abstract class AWSException extends RuntimeException{
 	private static final long serialVersionUID = -4480701634087674688L;
@@ -41,6 +41,7 @@ public abstract class AWSException extends RuntimeException{
         result.append(" <Reason>" + this.reason.toString() + "</Reason>\n");
         result.append(" <Resource>" + RequestContext.getExtParameter(Headers.RESOURCE_PATH) + "</Resource>\n");
         result.append(" <RequestId>" + RequestContext.getExtParameter(Headers.REQUEST_ID) + "</RequestId>\n");
+        result.append(" <HostId>" + RequestContext.getExtParameter(Headers.HOST_ID) + "</RequestId>\n");
         result.append("</Error>");
         return result.toString();
     }

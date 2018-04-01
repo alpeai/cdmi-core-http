@@ -1,7 +1,8 @@
 package pw.cdmi.core.http.exception;
 
-import pw.cdmi.core.http.HttpStatus;
-import pw.cdmi.exception.ErrorReason;
+import org.springframework.http.HttpStatus;
+
+import pw.cdmi.error.ErrorReason;
 
 /**
  * **********************************************************

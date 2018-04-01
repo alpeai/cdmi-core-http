@@ -35,6 +35,9 @@ public interface Headers {
 
     /** S3 response header for a request's AWS request ID */
     public static final String REQUEST_ID = "x-cdmi-request-id";
+    public static final String HOST_ID = "x-cdmi-host-id";
+    /** AWS response header for a request's AWS Resource Path */
+    public static final String RESOURCE_PATH = "x-cdmi-resource";
     
     /** 用以区分存储容器的类别：x-cdmi-class=file|basic */
 //    public static final String CDMI_CLASS = "x-cdmi-class";
@@ -218,9 +221,6 @@ public interface Headers {
 
     /** S3's Multi-Factor Authentication header */
     public static final String S3_MFA = "x-amz-mfa";
-
-    /** AWS response header for a request's AWS Resource Path */
-    public static final String RESOURCE_PATH = "x-aws-resource";
 
     /** S3 response header for a request's extended debugging ID */
     public static final String EXTENDED_REQUEST_ID = "x-amz-id-2";

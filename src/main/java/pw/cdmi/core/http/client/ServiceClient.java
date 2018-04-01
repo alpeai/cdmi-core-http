@@ -28,9 +28,9 @@ import java.util.List;
 import org.apache.http.HttpMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpMethod;
 
 import pw.cdmi.core.Constants;
-import pw.cdmi.core.http.HttpMethod;
 import pw.cdmi.core.http.utils.CodingUtils;
 import pw.cdmi.utils.HttpUtil;
 

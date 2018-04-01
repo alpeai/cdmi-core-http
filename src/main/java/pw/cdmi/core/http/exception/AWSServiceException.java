@@ -1,6 +1,6 @@
 package pw.cdmi.core.http.exception;
 
-import pw.cdmi.exception.ErrorReason;
+import pw.cdmi.error.ErrorReason;
 
 public class AWSServiceException extends AWSException {
 	private static final long serialVersionUID = 7586638404065538007L;

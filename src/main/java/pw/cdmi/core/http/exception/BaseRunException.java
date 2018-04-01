@@ -1,6 +1,6 @@
 package pw.cdmi.core.http.exception;
 
-import pw.cdmi.core.http.HttpStatus;
+import org.springframework.http.HttpStatus;
 
 public abstract class BaseRunException extends RuntimeException
 {

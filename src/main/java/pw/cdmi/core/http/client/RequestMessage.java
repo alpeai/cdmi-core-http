@@ -5,7 +5,8 @@ import java.net.URL;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import pw.cdmi.core.http.HttpMethod;
+import org.springframework.http.HttpMethod;
+
 import pw.cdmi.core.http.client.model.WebServiceRequest;
 
 /**
